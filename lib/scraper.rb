@@ -3,7 +3,7 @@ require 'pry'
 
 class Scraper
   
-  attr_accessor :
+  attr_accessor :students
 
   def self.scrape_index_page(index_url)
     url = "https://learn-co-curriculum.github.io/student-scraper-test-page/index.html"
