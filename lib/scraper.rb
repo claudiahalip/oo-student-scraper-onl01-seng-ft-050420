@@ -27,11 +27,12 @@ class Scraper
   end
 
   def self.scrape_profile_page(profile_url)
+    
     html = open(profile_url)
-    doc = Nokogiri::HTML(html)
+    file = Nokogiri::HTML(html)
     attributes = {}
 
-    doc.css("div.social-icon-container a").each do |xml|
+    file.css("div.social-icon-container a").each do |xml|
       case xml.attribute("href").value
 
       when /github/
