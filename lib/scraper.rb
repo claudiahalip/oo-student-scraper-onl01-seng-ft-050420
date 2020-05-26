@@ -12,6 +12,7 @@ class Scraper
     file = Nokogiri::HTML(html)
     students = file.css(".student-card")
     students_arr = []
+    binding.pry
 
     students.collect do |c|
       students_arr << {
