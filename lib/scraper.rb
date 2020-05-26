@@ -49,6 +49,7 @@ class Scraper
         attributes[:blog] = xml.attribute("href").value
       end
     end 
+    atributes
     
     
   end 
