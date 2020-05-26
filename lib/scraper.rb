@@ -10,10 +10,10 @@ class Scraper
     html = open(index_url)
     
     file = Nokogiri::HTML(html)
-    student_cards = file.css(".student-card")
+    students = file.css(".student-card")
     students_arr = []
 
-    student_cards.map do |card|
+    students.map do |card|
       students_arr << {
         :name => card.css("h4.student-name").text,
         :location => card.css("p.student-location").text,
