@@ -4,7 +4,7 @@ require 'pry'
 class Scraper
 
   def self.scrape_index_page(index_url)
-    html = open ( "https://learn-co-curriculum.github.io/student-scraper-test-page/index.html")
+    url = open ( "https://learn-co-curriculum.github.io/student-scraper-test-page/index.html")
     
     
     file = Nokogiri::HTML(html)
