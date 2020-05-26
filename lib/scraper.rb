@@ -48,8 +48,6 @@ class Scraper
       else
         attributes[:blog] = xml.attribute("href").value
       end
-
-    
     end 
   end 
     
