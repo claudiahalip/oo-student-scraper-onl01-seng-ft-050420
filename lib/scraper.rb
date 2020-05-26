@@ -13,11 +13,13 @@ class Scraper
     
     students_arr = []    #{:name=>"Mathieu Balez", :location=>"New York, NY", :profile_url=>"students/mathieu-balez.html"}
     
-    info.each do |s|
-      students_arr << { :name => card.css("h4.student-name").text,
-        :location => card.css("p.student-location").text,
-        :profile_url => card.css("a").attribute("href").value
+    info.each do |c|
+      students_arr << { :name => c.css("h4.student-name").text,
+        :location => c.css("p.student-location").text,
+        :profile_url => c.css("a").attribute("href").value
       }
+      
+      students_arr
     
     binding.pry 
     
