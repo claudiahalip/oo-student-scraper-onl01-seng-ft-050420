@@ -4,10 +4,10 @@ require 'pry'
 class Scraper
 
   def self.scrape_index_page(index_url)
-    url = open ( "https://learn-co-curriculum.github.io/student-scraper-test-page/index.html")
+    url = "https://learn-co-curriculum.github.io/student-scraper-test-page/index.html"
     
     
-    file = Nokogiri::HTML(html)
+    file = Nokogiri::HTML(open(url))
     
     arr_hashes = file.css("div.roster-cards-container")
     binding.pry 
