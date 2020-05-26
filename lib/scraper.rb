@@ -13,7 +13,7 @@ class Scraper
     students = file.css(".student-card")
     students_arr = []
 
-    students.map do |c|
+    students.collect do |c|
       students_arr << {
         :name => c.css("h4.student-name").text,
         :location => c.css("p.student-location").text,
