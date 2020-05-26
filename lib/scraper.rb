@@ -11,7 +11,9 @@ class Scraper
     
     info  = file.css(".student-cards")
     
-    students_arr = []    
+    students_arr = []    #{:name=>"Mathieu Balez", :location=>"New York, NY", :profile_url=>"students/mathieu-balez.html"}
+    
+    
     
     binding.pry 
     
