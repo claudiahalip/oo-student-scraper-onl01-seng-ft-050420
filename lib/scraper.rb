@@ -14,7 +14,7 @@ class Scraper
     students_arr = []
 
     student_cards.map do |card|
-      students << {
+      students_arr << {
         :name => card.css("h4.student-name").text,
         :location => card.css("p.student-location").text,
         :profile_url => card.css("a").attribute("href").value
