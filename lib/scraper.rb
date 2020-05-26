@@ -9,7 +9,7 @@ class Scraper
     
     file = Nokogiri::HTML(open(url))
     
-    info  = file.css("div.roster-cards-container")
+    info  = file.css(".studen-cards")
     
     
     binding.pry 
