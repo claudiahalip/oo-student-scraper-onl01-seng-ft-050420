@@ -11,7 +11,7 @@ class Scraper
     
     file = Nokogiri::HTML(html)
     student_cards = file.css(".student-card")
-    students = []
+    students_arr = []
 
     student_cards.map do |card|
       students << {
@@ -20,7 +20,7 @@ class Scraper
         :profile_url => card.css("a").attribute("href").value
       }
     end
-    students
+    students_arr
   end
   
   
