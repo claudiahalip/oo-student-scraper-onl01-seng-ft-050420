@@ -48,7 +48,7 @@ class Scraper
         attributes[:blog] = xml.attribute("href").value
       end
 
-    end
+    
     attributes[:profile_quote] = file.css("div.profile-quote").text
     attributes[:bio] = file.css("div.bio-content div.description-holder").text.strip
     attributes
@@ -57,6 +57,7 @@ class Scraper
    attributes[:profile_quote] = doc.css("div.profile-quote").text
     attributes[:bio] = doc.css("div.bio-content div.description-holder").text.strip
     attributes
+  end
     
   
 
