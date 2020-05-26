@@ -5,6 +5,7 @@ class Student
   @@all = []
 
   def initialize(student_hash)
+    @@all << self 
     
   end
 
@@ -17,6 +18,7 @@ class Student
   end
 
   def self.all
+    @@all
     
   end
 end
