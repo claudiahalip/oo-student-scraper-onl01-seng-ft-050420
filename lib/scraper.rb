@@ -7,7 +7,7 @@ class Scraper
 
   def self.scrape_index_page(index_url)
     
-    url = "https://learn-co-curriculum.github.io/student-scraper-test-page/index.html"
+    url = index_url
     
     file = Nokogiri::HTML(open(url))
     
