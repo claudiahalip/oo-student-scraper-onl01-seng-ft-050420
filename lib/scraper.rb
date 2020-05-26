@@ -2,6 +2,8 @@ require 'open-uri'
 require 'pry'
 
 class Scraper
+  
+  attr_accessor :
 
   def self.scrape_index_page(index_url)
     url = "https://learn-co-curriculum.github.io/student-scraper-test-page/index.html"
