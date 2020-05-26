@@ -9,7 +9,7 @@ class Scraper
     
     file = Nokogiri::HTML(html)
     
-    arr_hashes = file.css(".student_card")
+    arr_hashes = file.css(".roster-card-container")
     binding.pry 
     
     
