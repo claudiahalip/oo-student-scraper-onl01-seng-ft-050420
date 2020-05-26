@@ -7,9 +7,9 @@ class Scraper
 
   def self.scrape_index_page(index_url)
     
-    url = index_url
     
-    file = Nokogiri::HTML(open(url))
+    
+    file = Nokogiri::HTML(open(index_url))
     
     info  = file.css(".student-cards")
     
