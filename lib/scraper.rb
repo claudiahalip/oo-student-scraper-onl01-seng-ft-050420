@@ -11,10 +11,7 @@ class Scraper
     
     info  = file.css("div.roster-cards-container")
     
-    arr_students = []
-    info.each do |r| 
-      r.css("div.student-card")
-      
+    
     binding.pry 
     
     
