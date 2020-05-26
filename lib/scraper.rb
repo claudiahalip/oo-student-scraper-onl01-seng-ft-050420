@@ -3,7 +3,7 @@ require 'pry'
 
 class Scraper
   
-  attr_accessor :students
+  attr_accessor :students_arr
 
   def self.scrape_index_page(index_url)
     
