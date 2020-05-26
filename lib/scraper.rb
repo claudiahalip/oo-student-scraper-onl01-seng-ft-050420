@@ -11,7 +11,7 @@ class Scraper
     
     info  = file.css(".student-cards")
     
-    
+    students_arr = []    
     
     binding.pry 
     
