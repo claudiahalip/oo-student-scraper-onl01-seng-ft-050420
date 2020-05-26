@@ -9,7 +9,10 @@ class Scraper
     
     file = Nokogiri::HTML(open(url))
     
-    arr_hashes = file.css("div.roster-cards-container")
+    info  = file.css("div.roster-cards-container")
+    
+    arr_students = []
+    info.each do |r| 
     binding.pry 
     
     
