@@ -22,7 +22,7 @@ class Scraper
       
     students_arr
     
-    binding.pry 
+
     
     
   end
