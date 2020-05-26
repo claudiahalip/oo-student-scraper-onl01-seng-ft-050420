@@ -3,7 +3,7 @@ require 'pry'
 
 class Scraper
   
-  attr_accessor :students
+  
 
   def self.scrape_index_page(index_url)
     
@@ -50,9 +50,7 @@ class Scraper
       end
     end 
     
-    attributes[:profile_quote] = doc.css("div.profile-quote").text
-    attributes[:bio] = doc.css("div.bio-content div.description-holder").text.strip
-    attributes
+    
   end 
     
   
