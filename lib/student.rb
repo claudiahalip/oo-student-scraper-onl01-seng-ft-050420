@@ -22,6 +22,7 @@ class Student
     
     attributes_hash.each_pair {|key, value| self.send(("#{key}="), value)}
     
+    
   end
 
   def self.all
