@@ -12,7 +12,7 @@ class Scraper
     
     students_arr = []    #{:name=>"Mathieu Balez", :location=>"New York, NY", :profile_url=>"students/mathieu-balez.html"}
     
-    info.collect do |c|
+    info.map do |c|
       students_arr << { :name => c.css("h4.student-name").text,
         :location => c.css("p.student-location").text,
         :profile_url => c.css("a").attribute("href").value
